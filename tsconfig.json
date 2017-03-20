@@ -3,6 +3,7 @@
     "module": "commonjs",
     "lib": [
       "es6",
+      "es7",
       "dom",
       "es2016.array.include"
     ],
@@ -11,13 +12,16 @@
     "sourceMap": false,
     "noEmitOnError": true,
     "strictNullChecks": false,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
     "removeComments": true,
     "declaration": true,
     "typeRoots": [
+      "node_modules/@types",
       "types"
     ]
   },
   "include": [
-    "main.ts"
+    "lesson-4/main.ts"
   ]
 }
